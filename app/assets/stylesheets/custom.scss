@@ -1,0 +1,82 @@
+.status {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-bottom: solid 2px #1C1E22;
+  border-right: solid 2px #1C1E22;
+  transition: background-color 0.6s;
+  border-radius: 10px;
+  background-color: darken(#272B30, 3%);
+}
+
+.status .admin {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+}
+
+.status:hover .admin {
+  visibility:visible;
+  opacity: 1;
+}
+
+.status:hover {
+  background-color: lighten(#272B30, 3%);
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+.former {
+  margin-bottom: 10px;
+  width: 80%
+}
+
+.submitter {
+  margin-bottom: 10px;
+}
+
+.dimmed {
+  color: #7A8288;
+}
+
+.gravie {
+  border-radius: 50%;
+  border: 2px solid #1C1E22;
+}
+
+.column {
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: text-top;
+}
+
+.friendship {
+  background-color: transparent;
+  img {
+    width: 30px;
+  }
+  td {
+    padding-left: 15px;
+  }
+}
+
+.uppie:hover, .uppie.highlighted, .highlighted.uppie {
+  color: #62C462;
+}
+
+
+.downie:hover, .downie.highlighted, .highlighted.downie {
+  color: #EE5F5B;
+}
+
+.avatar.span2 {
+  display: inline-block;
+  padding-left: 15px;
+  margin: 20px 0;
+  text-align: center;
+}
