@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Xiaoshuos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @xiaoshuos.each do |xiaoshuo| %>
+      <tr>
+        <td><%= xiaoshuo.title %></td>
+        <td><%= xiaoshuo.content %></td>
+        <td><%= xiaoshuo.user %></td>
+        <td><%= link_to 'Show', xiaoshuo %></td>
+        <td><%= link_to 'Edit', edit_xiaoshuo_path(xiaoshuo) %></td>
+        <td><%= link_to 'Destroy', xiaoshuo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Xiaoshuo', new_xiaoshuo_path %>

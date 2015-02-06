@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @xiaoshuo.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @xiaoshuo.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @xiaoshuo.user %>
+</p>
+
+<%= link_to 'Edit', edit_xiaoshuo_path(@xiaoshuo) %> |
+<%= link_to 'Back', xiaoshuos_path %>
